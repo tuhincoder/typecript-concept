@@ -38,7 +38,8 @@ const richUser = {
 
 }
 
-richUser.addBalance(500)
+const balance1 = richUser.addBalance(500)
+// console.log(balance1);
 
 const customer = {
     name: 'tuhin',
@@ -53,3 +54,43 @@ customer.addedBalance(34)
 //
 
 
+
+const checkBalance = {
+    name: 'tuhin',
+    balance: 0,
+    addBalance(balance: number) {
+        console.log(this.balance + balance);
+        this.balance = this.balance + balance
+    }
+}
+
+checkBalance.addBalance(56)
+
+
+const arr: number[] = [2, 3, 4, 54, 66]
+
+const newArray: number[] = arr.map((elm: number): number => elm * elm)
+console.log(newArray);
+
+
+
+
+
+
+
+
+const countNumber1: number[] = [1, 2, 3, 4, 5, 6, 7, 8]
+
+const newCountNumber = countNumber1.map((num: number) => num * num)
+
+
+
+
+
+
+
+
+
+// const myFriends: string[] = ['tuhin', 'hasan', 'tawsif', 'mahmudul']
+
+// const newFriends = myFriends.map((friend: string) => console.log(friend))
